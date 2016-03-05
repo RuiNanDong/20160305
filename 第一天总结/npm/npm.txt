@@ -1,0 +1,6 @@
+require.cache  //查看模块的缓存，是一个对象，key是模块文件的绝对路径，value是module.exports
+
+模块生存周期问题：不手工删除，会一直存在；
+
+npm config ls  npm的配置项，设置全局安装的目录，设置代理等
+

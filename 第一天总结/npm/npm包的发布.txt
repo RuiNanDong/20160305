@@ -1,0 +1,10 @@
+
+
+npm init  初始化项目，填写一系列的信息，在当前项目文件下生成package.json文件
+
+npm adduser 注册npmjs.org网站用户名
+
+npm login  登录npmjs.org网站
+
+npm publish 将项目发布到npmjs.org网站上面
+(账号dong001，密码：dong0815)

@@ -1,0 +1,31 @@
+
+//person.js (测试文件)
+
+/*function Person(name){
+    console.log(name);
+}
+exports.person=Person;
+给exports对象添加属性，属性值为函数person，并暴漏出去。
+*/
+
+function Person(name){
+    this.name=name;
+    this.say=function(){
+        return "hello";
+    }
+}
+module.exports = Person;
+//改变module.exports的指向为函数Person
+
+//node.js 引入文件并调用
+
+/*
+var person = require('./person.js');
+person.person('dong')
+*/
+var Person = require('./person.js');
+var per = new Person("dong");
+console.log(per);
+console.log(per.say());
+
+//module.expirts 和exports 初始时指向同一个占内存。
